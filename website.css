@@ -13,6 +13,7 @@ header {
     display: flex;
     position: fixed;
     opacity: 0.9;
+    z-index: 9999;
 }
 
 header h1 {
@@ -102,6 +103,7 @@ nav button:hover {
     background-position-y: -800px;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -116,6 +118,17 @@ nav button:hover {
     background-color: antiquewhite;
     border-radius: 20px;
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5) ;
+    transition: 1s;
+}
+
+.container .card:hover {
+    transform: scale(1.1) ;
+
+}
+
+.capai {
+    background-image: url(wallpaper.avif);
+    background-size: cover;
 }
 .capai h1{
     text-align: center;
@@ -127,13 +140,18 @@ nav button:hover {
     height: 100px;
     align-items: center;
     padding: 20px;
-    margin: 100px auto;
-    background-color:coral;
+    margin: 60px auto;
+    background-color:#EAE4D5;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
-    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
 
+}
+
+.capai .kartu:hover {
+    transform: translateY(-6px);
 }
 
 .capai .kartu img {
@@ -141,8 +159,9 @@ nav button:hover {
     height: 90px;
     margin-left: 50px;
     border-radius: 50%;
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
     margin-right: auto;
+    border: 2px solid black;
 }
 
 .capai .kartu .jelas {
@@ -162,15 +181,61 @@ nav button:hover {
     background-color: salmon;
     height: 30px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: 30px;
 }
 
+.skill {
+    background-image: url(bunga.avif);
+    background-size: cover;
+}
+ .skill h1 {
+      margin: 30px;
+      text-align: center;
+      color: white;
+    }
 
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
 
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
 
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
+    .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #4a90e2;
+    }
 
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
 
+    .desc {
+      font-size: 14px;
+      color: #666;
+    }
 
 @media screen and (max-width: 1000px) {
     
@@ -238,6 +303,10 @@ nav button:hover {
    .kartu .jelas ul li {
     font-size: 8px;
     margin-right: 10px;
+   }
+   .footer {
+    margin-bottom: 0;
+    font-size: 10px;
    }
 
 }
